@@ -22,10 +22,12 @@
   </head>
   <body>
 
- <audio autoplay hidden>
-  <source src="music.mp3" type="audio/mpeg">
-  Your browser does not support the audio tag.
-</audio>
+<script>
+  window.onload = function () {
+    const audio = new Audio('music.mp3');
+    audio.play().catch(error => console.log('Audio autoplay tidak diperbolehkan:', error));
+  };
+</script>
 
 
 
@@ -40,7 +42,7 @@
 
     <nav class="navbar navbar-expand-md sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#">❤️❤️❤️❤️❤️❤️❤️ ME AND YOU ❤️❤️❤️❤️❤️❤️❤️</a>
+        <a class="navbar-brand" href="#">❤️❤️❤️❤️❤️❤️❤️❤️❤️ ME AND YOU ❤️❤️❤️❤️❤️❤️❤️❤️❤️</a>
           </div>
         </div>
       </div>
