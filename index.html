@@ -27,7 +27,7 @@
         <h2>❤️ME AND YOU❤️</h2>
         <h1></h1>
         <h2>WELCOME TO GALLERY</h2>
-        <a href="#home" class="btn btn-lg mt-4" onclick="playMusic()">😍😍</a>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll(); playMusic()">😍😍</a>
     </main>
 </section>
 
@@ -41,7 +41,13 @@
         const audio = document.getElementById("backgroundMusic");
         audio.play().catch(error => console.log("Audio autoplay tidak diperbolehkan:", error));
     }
+
+    function enableScroll() {
+        // Masukkan logika enable scroll di sini
+        console.log("Scrolling enabled!");
+    }
 </script>
+
 
 
     <nav class="navbar navbar-expand-md sticky-top mynavbar">
